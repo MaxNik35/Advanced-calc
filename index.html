@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style\style.css">
+    <script  defer src="script\script.js"></script>
+    
+</head>
+
+<body>
+<div class="show unhidden">
+<div  class="container" >
+    
+
+    
+          
+    
+        <form name="calc">
+    
+              
+    
+                <textarea id="inputVal"></textarea><table id="calc" border="2">
+            
+                      
+            
+                <tbody><tr>
+            
+                    <td><input id="btn" type="button" value="√" onclick="calc.inputVal.value+='Math.sqrt('">
+            
+                    </td>
+            
+                      
+            
+                    <td><input id="btn" type="button" value="pi" onclick="calc.inputVal.value+='Math.PI'">
+            
+                    </td>
+            
+                      
+            
+                    <td><input id="btn" type="button" value="x^" onclick="calc.inputVal.value+='Math.pow('">
+            
+                    </td>
+            
+                      
+            
+                    <td><input id="btn" type="button" value="(" onclick="calc.inputVal.value+='('">
+            
+                    </td>
+            
+                      
+            
+                    <td><input id="btn" type="button" value=")" onclick="calc.inputVal.value+=')'">
+            
+                    </td>
+            
+                      
+            
+                </tr><tr>
+            
+                        
+            
+                    
+            
+                </tr>
+            
+                  
+            
+                <tr>
+            
+                    <td><input id="btn1" type="button" value="1" onclick="calc.inputVal.value+='1'">
+            
+                    </td>
+            
+                      
+            
+                    <td><input id="btn1" type="button" value="2" onclick="calc.inputVal.value+='2'">
+            
+                    </td>
+            
+                      
+            
+                    <td><input id="btn1" type="button" value="3" onclick="calc.inputVal.value+='3'">
+            
+                    </td>
+            
+    
+                    <td><input id="btn" type="button" value="/" onclick="calc.inputVal.value+='/'">
+                    
+            
+                    </td>
+            
+
+                    <td><input id="btn" type="button" value="n!" onclick="calc.inputVal.value+='!'">
+            
+                    </td>
+            
+        
+            
+                </tr>
+            
+                  
+            
+                <tr>
+            
+                    <td><input id="btn1" type="button" value="4" onclick="calc.inputVal.value+='4'">
+            
+                    </td>
+            
+                      
+            
+                    <td><input id="btn1" type="button" value="5" onclick="calc.inputVal.value+='5'">
+            
+                    </td>
+            
+                      
+            
+                    <td><input id="btn1" type="button" value="6" onclick="calc.inputVal.value+='6'">
+            
+                    </td>
+            
+                      
+            
+                    <td><input id="btn" type="button" value="*" onclick="calc.inputVal.value+='*'">
+            
+                    </td>
+            
+                      
+                    
+                    <td><input id="btn" type="button" value="%" onclick="calc.inputVal.value+='%'">
+            
+                    </td>
+            
+                      
+            
+        
+                </tr>
+            
+                  
+            
+                <tr>
+            
+                    <td><input id="btn1" type="button" value="7" onclick="calc.inputVal.value+='7'">
+            
+                    </td>
+            
+                      
+            
+                    <td><input id="btn1" type="button" value="8" onclick="calc.inputVal.value+='8'">
+            
+                    </td>
+            
+                      
+            
+                    <td><input id="btn1" type="button" value="9" onclick="calc.inputVal.value+='9'">
+            
+                    </td>
+            
+                      
+                    <td><input id="btn" type="button" value="-" onclick="calc.inputVal.value+='-'">
+                    
+            
+                    </td>
+            
+                      
+                    <td><input id="btn" type="button" value="C" onclick="calc.inputVal.value=''">
+                    
+            
+                    </td>
+            
+                      
+            
+        
+                </tr>
+            
+                  
+            
+                <tr>
+            
+                    <td><input id="btn" type="button" value="." onclick="calc.inputVal.value+='.'">
+            
+                    </td>
+            
+                      
+            
+                    <td><input id="btn1" type="button" value="0" onclick="calc.inputVal.value+='0'">
+            
+                    </td>
+            
+                      
+            
+                    <td><input id="btn" type="button" value="," onclick="calc.inputVal.value+=','">
+            
+                    </td>
+            
+                      
+            
+                    <td><input id="btn" type="button" value="+" onclick="calc.inputVal.value+='+'">
+            
+                    </td>
+            
+                    <td><input id="btn" type="button" value="←" onclick="backspace(this.form)">
+                    
+                    
+            
+                    </td>
+            
+                      
+        
+                </tr>
+            
+                  
+            
+                
+            
+                  
+            
+                <tr>        
+        
+                    <td><input id="btn2" type="button" value="=" onclick="calculate(this.form)">
+            
+                    </td><td></td>
+   
+    
+    </tr>
+            
+                </tbody></table>
+            
+                </form>
+</div>
+
+</div>
+<button id="switchin" >Конвертер</button>  
+        <div class="conv hidden">
+                <div class="container1">
+                <div  class="text">Конвертер систем счисления</div>
+            <a class="text">Введите число:</a> <input id="number" />
+            <a class="text">Из какой системы счисления конвертируем:</a> <input id="m" />
+            <a class="text">В какую систему счисления конвертируем:</a> <input id="n" />
+                        <button id="count">Конвертировать!</button>
+                        <!-- <hr/> -->
+                        <div id="result"> <a class="text">Результат:</a> </div>
+                </div>
+            </div>
+
+<div>
+ 
+
+   
+</div>
+<script defer src="script/renderer.js"></script>
+
+</body>
+</html>

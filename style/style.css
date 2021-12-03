@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+body {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}    
+    
+/* Style to set the title of calculator */
+
+.title { 
+
+    margin-bottom: 10px; 
+
+    padding: 5px 0;
+
+    font-size: 20px;
+
+    font-weight:bold;
+
+    text-align:center; 
+
+    width: 447px; 
+
+    color:green; 
+
+    border: solid black 2px; 
+
+} 
+
+#btn {
+    font-weight:bold;
+    width: 70px;
+    height: 70px;
+    background: #4a4a4a;
+    display: inline-block;
+    text-align: center;
+    /* line-height: 100px; */
+    user-select: none;
+    
+}
+
+#btn:hover {
+    background: #f70;
+    color: #fff;
+}
+  
+
+input[type="button"] { 
+
+    /* background-color:green;  */
+
+    color: rgb(255, 255, 255); 
+
+    border: solid black 2px; 
+
+    width:100% 
+
+} 
+
+  
+
+/* Set input textarea */
+
+input[type="text"] { 
+
+    background-color:white; 
+
+    border: solid black 2px; 
+
+    width:100% 
+
+} 
+#inputVal {
+    width: -webkit-fill-available;
+    font-size: 16px;
+    resize: none;
+    border: inset 5px;
+}
+.container {
+    /* box-shadow: 0 0 7px 3px #5d5d5d;
+    border-color:black;
+    border-style:inset;
+    border-width: 1px; */
+    background: rgba(103, 103, 103, 0.7);      
+    width: fit-content;
+    height: 545px;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 10px;
+}
+#calc {
+    border: solid   ;
+    width: 400px;    
+    /* display: inline-block; */
+}
+
+/* ........................ */
+.hidden{
+    display: none;
+   
+}
+.unhidden{
+    display: block;
+}
+.q{
+    width: 600px;
+    height: 400px;
+    background: #fc0;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    user-select: none;
+}
+.w{
+
+}
+.e{
+    
+}
+.t{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#count {
+    font-family: 'Oswald', sans-serif;  
+    color: white;
+    width: 150px;
+    height: 50px;
+    background: #4a4a4a;
+    display: inline-block;
+    text-align:center;
+    user-select:none;
+}
+#count:hover {
+    display: inline-block;
+    background: #f70;
+    color: #fff;
+}
+
+#number{
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-bottom: 15px;
+}
+#n{
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-bottom: 15px;
+}
+#m{
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-bottom: 15px;
+}
+#result{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 10px;
+}
+.y{
+    padding: 8% 0 9 1%;
+    width: 100%;
+    text-align: center;
+    background: #eee;
+}
+/* #switchin{
+    font-weight:bold;
+    width: 70px;
+    height: 70px;
+    background: #fc0;
+    display: inline-block;
+    text-align: center;
+    /* line-height: 100px; */
+    /* user-select: none;
+} */ 
+.container1 {
+    /* box-shadow: 0 0 7px 3px #5d5d5d;
+    border-color: black;
+    border-style: inset;
+    border-width: 1px; */
+    background: rgba(103, 103, 103, 0.7);
+    width: 400px;
+    height: 545px;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+
+#switchin {
+    font-family: 'Oswald', sans-serif;
+    top: 550px;
+    /* bottom: 10px; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    width: 120px;
+    height: 50px;
+    background: #727272;
+    text-align: center;
+    /* line-height: 100px; */
+    user-select: none;
+    /* flex-flow: column nowrap; */
+}
+#switchin:hover {
+    display: inline-block;
+    background: #9a9a9a;
+    color: rgb(0, 0, 0);
+}
+
+#btn2 {
+    font-weight:bold;
+    width: 519%;
+    height: 70px;
+    background: #4a4a4a;
+    display: inline-block;
+    text-align: center;
+    /* line-height: 100px; */
+    user-select: none;
+    
+}
+
+#btn2:hover {
+    background: #f70;
+    color: #fff;
+}
+
+ td {
+    border: 0px;
+ }
+ #btn1 {
+    font-weight:bold;
+    width: 70px;
+    height: 70px;
+    background: #1d1d1d ;
+    display: inline-block;
+    text-align: center;
+    /* line-height: 100px; */
+    user-select: none;
+    
+}
+
+#btn1:hover {
+    background: #f70;
+    color: #fff;
+}
+html, body{
+    background:rgba(37, 37, 38, 1); 
+    overflow: hidden;     
+
+}
+
+.text{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+
+}
+/* .......................... */
+
